@@ -1,0 +1,19 @@
+-- show databases;
+-- use test;
+-- show tables;
+-- DESC `topic`;
+-- select * from `topic`;
+
+CREATE DATABASE `test;
+use `test`;
+DROP TABLE IF EXISTS `topic`;
+CRATE TABLE `topic`(`id` int(11) NOT NULL AUTO_INCREMENT,`title` varchar(100) NOT NULL, `description` text NOT NULL, `author` int(11) NOT NULL, `created` datetime NOT NULL, PRIMARY KEY(`id`));
+
+INSERT INTO `toptic` VALUES(1, "HTML", "HTML is Hyper Text Markup Lanaugage", 1, "2017-10-08 00:00:00");  
+
+CREATE TABLE `user`(`id` int(11) NOT NULL AUTO_INCREMENTAL, `name` varchar(20) NOT NULL, `password` varchar(30) NOT NULL, PRIMARY KEY(`id`));
+
+INSERT INTO `user` VALUES(1, "bebequ", "aaaa");
+
+SELECT title, name FROM topic LEFT JOIN user ON topic.author = user.id;
+

@@ -1,0 +1,2 @@
+<h2>What is JavaScript?</h2>
+JavaScript is a language for web control.
